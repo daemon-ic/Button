@@ -205,6 +205,7 @@ function SpeechButton() {
           cursor: "pointer",
         }}
         onClick={reroll}
+        onTouchEnd={reroll}
       >
         <Speech
           styles={style}
