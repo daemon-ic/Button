@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from "react";
 import SpeechButton from "./SpeechButton";
 import ButtonAppBar from "./components/ButtonAppBar";
