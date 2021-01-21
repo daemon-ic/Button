@@ -3,8 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Speech from "react-speech";
 import "./App.css";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
 
 function SpeechButton() {
   const [message, setMessage] = useState("");
@@ -177,6 +175,7 @@ function SpeechButton() {
       .replace("version", "madison/motherfucker/:from")
       .replace("operations", "question/:from")
       .replace(":language", "logic")
+      .replace(":company", "you")
       .replace(":from", "lilbitch");
 
     console.log("fetching from : ", cleanUrl);
@@ -209,6 +208,7 @@ function SpeechButton() {
       >
         <Speech
           styles={style}
+          voice="Google UK English Female"
           textAsButton={true}
           displayText="FUCK"
           text={message}
