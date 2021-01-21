@@ -200,7 +200,12 @@ function SpeechButton() {
 
   return (
     <React.Fragment>
-      <div onClick={reroll}>
+      <div
+        style={{
+          cursor: "pointer",
+        }}
+        onClick={reroll}
+      >
         <Speech
           styles={style}
           textAsButton={true}
